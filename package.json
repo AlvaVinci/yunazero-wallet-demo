@@ -1,0 +1,33 @@
+{
+  "name": "yunazero-wallet-demo",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=18.17" },
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "start": "node --enable-source-maps dist/server.js",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "format": "prettier -w .",
+    "test": "vitest run --reporter=dot",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/supertest": "^6.0.3",
+    "eslint": "^9.7.0",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.3.2",
+    "supertest": "^6.3.4",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.16.2",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}
